@@ -1,0 +1,7 @@
+pytest
+pytest-cov
+prettyprint
+python-dotenv
+pdocs
+bs4
+requests
