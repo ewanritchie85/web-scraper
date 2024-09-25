@@ -3,5 +3,6 @@ pytest-cov
 prettyprint
 python-dotenv
 pdocs
-bs4
+# bs4 and beautifulsoup4 are the exact same thing
+bs4 
 requests
