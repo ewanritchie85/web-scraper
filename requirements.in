@@ -6,3 +6,4 @@ pdocs
 # bs4 and beautifulsoup4 are the exact same thing
 bs4 
 requests
+selenium
