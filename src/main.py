@@ -36,10 +36,18 @@ python_job_elements = [
     h2_element.parent.parent.parent for h2_element in python_jobs
 ]
 
+# find job details
 for python_job in python_job_elements:
     title_element = python_job.find("h2", class_="title")
     company_element = python_job.find("h3", class_="company")
     location_element = python_job.find("p", class_="location")
-    print(title_element.text.strip())
-    print(company_element.text.strip())
-    print(location_element.text.strip(), "\n")
+    # print(title_element.text.strip())
+    # print(company_element.text.strip())
+    # print(location_element.text.strip(), "\n")
+    
+# find job link
+for python_job in python_job_elements:
+    links = python_job.find_all("a")
+    for link in links:
+        link_url = link["href"]
+        print(f"Apply here: {link_url}\n")
